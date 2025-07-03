@@ -2,7 +2,7 @@
 export const IMAGES = {
   // Profile images
   profile: {
-    avatar: '/public/images/profile/setu2.jpg',
+    avatar: '/images/profile/setu2.jpg',
     hero: '/images/profile/setu2.jpg',
   },
   
