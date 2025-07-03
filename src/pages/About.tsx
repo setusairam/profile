@@ -240,7 +240,7 @@ const About: React.FC = () => {
               >
                 <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-200 dark:border-blue-800">
                   <img
-                    src="/public/images/profile/setu3.jpg"
+                    src="/images/profile/setu3.jpg"
                     alt="John Doe - Professional"
                     className="w-full h-full object-cover"
                   />

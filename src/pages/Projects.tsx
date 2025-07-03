@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
       techStack: ['Python', 'Flask','SQLite', 'Java Script', 'HTML', 'CSS'],
       github: 'https://github.com',
       //demo: 'https://demo.com',
-      image: 'public/images/projects/accesscontrols1.png',
+      image: '/images/projects/accesscontrols1.png',
       category: ['Full Stack','Security'],
       icon: 'mdi:security-lock'
     },
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
       techStack: ['Java Script', 'Python', 'Open cv', 'ngrok', 'HTML', 'CSS'],
       github: 'https://github.com',
       //demo: 'https://demo.com',
-      image: 'public/images/projects/magnifier.png',
+      image: '/images/projects/magnifier.png',
       category: ['Full Stack', 'Accessibility'],
       icon: 'mdi:eye'
     },
@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
       techStack: ['Python', 'Logistic Regression', 'Random Forest', 'Flask', 'Pandas', 'Numpy','Skitlearn', 'HTML', 'CSS', 'Java Script'],
       github: 'https://github.com',
       //demo: 'https://demo.com',
-      image: 'public/images/projects/diabetespred.png',
+      image: '/images/projects/diabetespred.png',
       category: ['Machine Learning', 'Healthcare'],
       icon: 'solar:health-bold'
     },
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
       techStack: ['HTML', 'CSS', 'JS'],
       github: 'https://github.com',
       //demo: 'https://demo.com',
-      image: 'public/images/projects/travelplanner.png',
+      image: '/images/projects/travelplanner.png',
       category: ['Frontend', 'Web App'],
       icon: 'mdi:clipboard-check'
     },
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
       techStack: ['Python', 'Pillow', 'Tkinter', 'stegano'],
       github: 'https://github.com',
       //demo: 'https://demo.com',
-      image: 'public/images/projects/steganography.png',
+      image: '/images/projects/steganography.png',
       category: ['Security Tool', 'Desktop App'],
       icon: 'carbon:encryption'
     },
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
       techStack: ['Java Script', 'HTML', 'CSS'],
       github: 'https://github.com',
       demo: 'https://setusairam9.github.io/VisionFlex/',
-      image: 'public/images/projects/visionflex.png',
+      image: '/images/projects/visionflex.png',
       category: ['Frontend', 'Accessibility'],
       icon: 'mdi:eye'
     },
