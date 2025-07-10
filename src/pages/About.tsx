@@ -10,6 +10,7 @@ const About: React.FC = () => {
     { name: 'HTML', icon: 'vscode-icons:file-type-html' },
     { name: 'CSS', icon: 'devicon:css3' },
     { name: 'My SQL', icon: 'logos:mysql-icon' },
+    { name: 'Postgre SQL', icon: 'devicon:postgresql' },
     { name: 'JS', icon: 'devicon:javascript' },
     { name: 'React', icon: 'devicon:react' },
   ];
@@ -89,6 +90,10 @@ const About: React.FC = () => {
     { name: 'LinkedIn', icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/setusairam-y/' },
     { name: 'Twitter', icon: 'mdi:twitter', url: 'https://x.com/itsSSR_10' },
   ];
+
+  const handleResumeDownload = () => {
+    window.open('https://drive.google.com/file/d/1EOmXg02lqi5epZhs69g63qzGzkPDtBq2/view?usp=sharing', '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-black relative overflow-hidden">
@@ -219,17 +224,13 @@ const About: React.FC = () => {
                   </motion.a>
                 ))}
               </motion.div>
-              <motion.button 
-                className="bg-blue-600 dark:bg-blue-400 text-white dark:text-black px-6 py-3 rounded-md hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors flex items-center space-x-2"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Download size={20} />
-                <span>Download Resume</span>
-              </motion.button>
+                <button
+              onClick={handleResumeDownload}
+              className="bg-blue-600 dark:bg-blue-400 text-white dark:text-black px-6 py-3 rounded-xl hover:bg-blue-700 dark:hover:bg-blue-500 transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <Download size={20} />
+              <span>Download Resume</span>
+            </button>
+            
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
               <motion.div 
@@ -241,7 +242,7 @@ const About: React.FC = () => {
                 <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-200 dark:border-blue-800">
                   <img
                     src="/images/profile/setu3.jpg"
-                    alt="John Doe - Professional"
+                    alt="Setu Sai Ram - Portfolio"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -258,6 +259,7 @@ const About: React.FC = () => {
               </motion.div>
             </div>
           </div>
+          
 
           {/* Technical Skills */}
           <motion.section
