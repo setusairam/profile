@@ -198,9 +198,10 @@ const About: React.FC = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                A passionate full-stack developer and creative professional with expertise in 
-                modern web technologies, Python development, and digital design. I love building 
-                innovative solutions that make a difference.
+                A passionate and creative professional with a strong foundation 
+                in modern development practices, data analytics, and digital design. 
+                I enjoy building scalable solutions that solve real-world problems and 
+                thrive in collaborative, fast-paced environments that encourage innovation and continuous learning.
               </motion.p>
               <motion.div 
                 className="flex items-center space-x-4 mb-6"
