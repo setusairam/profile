@@ -26,6 +26,7 @@ const About: React.FC = () => {
     { name: 'Excel', icon: 'vscode-icons:file-type-excel' },
     { name: 'Power BI', icon: 'logos:microsoft-power-bi' },
     { name: 'Jupyter', icon: 'devicon:jupyter' },
+    { name: 'Word Press', icon: 'ion:logo-wordpress' },
   ];
 
   const availableRoles = [
