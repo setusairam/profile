@@ -40,31 +40,6 @@ Hi! This is the source code for **Yarlagadda Setu Sai Ram’s Portfolio Website*
 - **Styling:** [Tailwind CSS](https://tailwindcss.com)
 - **Deployment:** Any static hosting (Vercel, Netlify, GitHub Pages)
 
----
-
-## 📂 Project Structure
-
-```
-
-my-portfolio/
-├── public/
-│   ├── images/
-│   │   └── profile/
-│   │       └── setu3.jpg
-│   └── ...
-├── src/
-│   ├── components/
-│   │   └── About.tsx   # This file
-│   ├── App.tsx
-│   ├── index.tsx
-│   └── ...
-├── package.json
-└── README.md
-
-````
-
----
-
 ## ⚙️ Installation & Setup
 
 1. **Clone the repo**
