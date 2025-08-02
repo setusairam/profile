@@ -6,7 +6,7 @@ import { Download } from 'lucide-react';
 const About: React.FC = () => {
   const technicalSkills = [
     { name: 'Python', icon: 'material-icon-theme:python' },
-    { name: 'Java', icon: 'devicon:java' },
+    { name: 'C', icon: 'streamline-logos:c-language-logo-solid' },
     { name: 'HTML', icon: 'vscode-icons:file-type-html' },
     { name: 'CSS', icon: 'devicon:css3' },
     { name: 'My SQL', icon: 'logos:mysql-icon' },
