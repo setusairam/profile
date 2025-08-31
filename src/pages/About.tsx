@@ -93,7 +93,7 @@ const About: React.FC = () => {
   ];
 
   const handleResumeDownload = () => {
-    window.open('https://drive.google.com/file/d/1EOmXg02lqi5epZhs69g63qzGzkPDtBq2/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1BEyzwLM9qKpG5BBLuSKl1myKHkyeQbSv/view?usp=sharing', '_blank');
   };
 
   const professionalTitles = [
