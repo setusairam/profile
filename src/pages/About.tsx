@@ -44,6 +44,20 @@ const About: React.FC = () => {
       skills: ['Python', 'Flask', 'Pandas', 'NumPy', 'MongoDB']
     },
     {
+  title: 'Data Analyst',
+  type: 'Full-time/Part-time',
+  description: 'Skilled in extracting insights from data, building dashboards, and supporting data-driven decision-making',
+  icon: 'mdi:chart-bar',
+  points: [
+    'Data cleaning, preprocessing, and transformation',
+    'Exploratory data analysis (EDA) with Python libraries',
+    'Data visualization and interactive dashboards',
+    'Statistical analysis and hypothesis testing',
+    'SQL-based data querying and reporting'
+  ],
+  skills: ['Python', 'SQL', 'Pandas', 'NumPy', 'Matplotlib', 'Power BI', 'Excel']
+},
+    {
       title: 'Graphic Designer',
       type: 'Freelance',
       description: 'Creative visual design for brands and digital marketing',
@@ -55,20 +69,6 @@ const About: React.FC = () => {
         'UI/UX design mockups',
       ],
       skills: ['Figma', 'Canva', 'Brand Strategy', 'logo design']
-    },
-    {
-      title: 'Content Writer',
-      type: 'Freelance',
-      description: 'Technical documentation and engaging blog content',
-      icon: 'mdi:pencil',
-      points: [
-        'Technical documentation and API guides',
-        'SEO-optimized blog posts and articles',
-        'Product descriptions and marketing copy',
-        'Social media content strategy',
-        'Ghost writing and Copy Writing'
-      ],
-      skills: ['Technical Writing', 'SEO', 'Content Strategy', 'Research', 'Copywriting', 'Articles']
     },
     {
       title: 'Frontend development',
@@ -235,7 +235,7 @@ const About: React.FC = () => {
               >
                 A passionate and creative professional with a strong foundation 
                 in modern development practices, data analytics, and digital design. 
-                I enjoy building scalable solutions that solve real-world problems and 
+                I enjoy building secure and scalable solutions that solve real-world problems and 
                 thrive in collaborative, fast-paced environments that encourage innovation and continuous learning.
               </motion.p>
               
