@@ -113,6 +113,21 @@ const Experience: React.FC = () => {
         'Designed event posters, certificates, and promotional creatives for 15+ flagship ACM events, ensuring strong visual identity and brand consistency',
       ],
     },
+    {
+  title: 'Technical Lead',
+  organization: 'Score Craft',
+  period: '2024 - 2025',
+  description: 'Led the technical operations of the club, ensuring smooth execution of quizzes, competitions, and hackathons with a focus on security and efficiency.',
+  logo: '/images/companies/scorecraftlogo.jpg',
+  website: 'https://scorecraft.org',
+  achievements: [
+    'Organized and managed technical infrastructure for GATE competitions, quizzes, and hackathons with 200+ participants',
+    'Ensured secure platforms and smooth technical workflows during hackathons, minimizing downtime and errors',
+    'Developed guidelines and support systems for participants to improve competition experience',
+    'Collaborated with team members to design and implement fair evaluation mechanisms',
+    'Provided technical mentorship to participants, fostering problem-solving and innovation'
+  ],
+},
   ];
 
   const getTabIcon = (tab: string) => {
