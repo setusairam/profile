@@ -115,7 +115,7 @@ const Experience: React.FC = () => {
     },
     {
   title: 'Technical Lead',
-  organization: 'Score Craft',
+  organization: 'ScoreCraft',
   period: '2024 - 2025',
   description: 'Led the technical operations of the club, ensuring smooth execution of quizzes, competitions, and hackathons with a focus on security and efficiency.',
   logo: '/images/companies/scorecraftlogo.jpg',
