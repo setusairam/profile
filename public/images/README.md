@@ -1,57 +1,44 @@
-# Images Folder Structure
+# Personal Portfolio Website
 
-This folder contains all the images used in the portfolio website.
+Welcome to the source code for **Setu Sai Ram’s Personal Portfolio** — a modern, responsive site that beautifully showcases skills, projects, and more. Built using **React**, **Framer Motion**, **Tailwind CSS**, and **Iconify**, this portfolio delivers both style and substance.
 
-## Folder Structure:
+---
 
-### `/profile/`
-- `avatar.jpg` - Main profile picture used in navigation and about page
-- `hero.jpg` - Large hero image for the about page
+##  Features
 
-### `/projects/`
-- `project-1.jpg` - E-Commerce Platform screenshot
-- `project-2.jpg` - Task Management App screenshot
-- `project-3.jpg` - Data Visualization Dashboard screenshot
-- `project-4.jpg` - Mobile Banking App screenshot
-- `project-5.jpg` - AI Chat Assistant screenshot
-- `project-6.jpg` - Portfolio Website screenshot
+- **Animated Hero Section**  
+  A captivating introduction with dynamic animations, your profile image, and ready-to-use links to social platforms and resume.
 
-### `/companies/`
-- `techcorp.jpg` - TechCorp Solutions logo
-- `digital-innovations.jpg` - Digital Innovations Inc logo
-- `startupxyz.jpg` - StartupXYZ logo
-- `google.jpg` - Google logo
-- `microsoft.jpg` - Microsoft logo
-- `netflix.jpg` - Netflix logo
+- **Interactive Skills Showcase**  
+  Engaging hover animations highlight your core technical skills and tools, demonstrating both capability and flair.
 
-### `/education/`
-- `stanford.jpg` - Stanford University logo
-- `berkeley.jpg` - UC Berkeley logo
+- **Roles & Opportunities**  
+  Clearly outlined sections for open roles you're pursuing, complete with responsibilities and associated skills.
 
-## Image Guidelines:
+- **Eye-Catching Background Effects**  
+  Subtle, animated shapes and motion (via Framer Motion) create an appealing aesthetic without overwhelming the content.
 
-1. **Profile Images**: 400x400px, square format, high quality
-2. **Project Screenshots**: 600x400px, 3:2 aspect ratio
-3. **Company Logos**: 100x100px, square format
-4. **Education Logos**: 100x100px, square format
+- **Resume Download Functionality**  
+  Seamlessly integrates a resume download button powered by Google Drive, making it easy for recruiters to access your CV.
 
-## Recommended Image Formats:
-- Use `.jpg` for photographs and complex images
-- Use `.png` for logos with transparency
-- Use `.webp` for better compression (modern browsers)
+- **Social Media Integration**  
+  Direct links to your GitHub, LinkedIn, and Twitter profiles for enhanced connectivity.
 
-## Optimization:
-- Compress images to reduce file size
-- Use appropriate resolution for web display
-- Consider using responsive images for different screen sizes
+- **Responsive, Light & Dark Mode Ready**  
+  Designed to look and perform beautifully across devices and themes.
 
-## Usage:
-To use these images in your components, import them like this:
-```javascript
-// For direct usage
-<img src="/images/profile/avatar.jpg" alt="Profile" />
+---
 
-// Or use the constants file for better organization
-import { IMAGES, getImageSrc } from '../constants/images';
-<img src={getImageSrc(IMAGES.profile.avatar, IMAGES.fallback.profile)} alt="Profile" />
-```
+##  Tech Stack
+
+| Area              | Details                                     |
+|-------------------|---------------------------------------------|
+| **Framework**     | React (TypeScript)                          |
+| **Animation**     | Framer Motion                               |
+| **Styling**       | Tailwind CSS                                |
+| **Icons**         | Iconify & Lucide React                      |
+| **Deployment**    | Compatible with Vercel, Netlify, GitHub Pages |
+
+---
+
+Visit http://iris-info.vercel.app to preview your site locally.
