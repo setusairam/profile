@@ -75,8 +75,24 @@ const Education: React.FC = () => {
         logo: '/images/education/Wadhwanilogo.png',
         skills: ['Entrepreneurial Skills', 'Innovation', 'Idea Development', 'Business Planning', 'Leadership'],
         link: 'https://web.certificate.wfglobal.org/en/certificate?certificateId=68ff09d8340b394e18efd33f'
-      }
-
+      },
+      {
+      name: 'Tools of the Trade: Linux and SQL',
+      platform: 'Google - Coursera',
+      year: '2025',
+      logo: '/images/education/googlelogo.jpg',
+      skills: [
+        'Command-Line Interface',
+        'Database Management',
+        'Bash (Scripting Language)',
+        'Operating Systems',
+        'Relational Databases',
+        'Unix',
+        'Linux Commands',
+        'Authentications'
+      ],
+      link: 'https://coursera.org/share/7b4313c2c101981c54f9b92676f2b4d6'
+    }
   ];
 
   const achievements = [
