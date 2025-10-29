@@ -84,6 +84,16 @@ const Projects: React.FC = () => {
     //   category: ['Frontend', 'Portfolio'],
     //   icon: 'mdi:web'
     // },
+      {
+      title: 'QR-AutoSync',
+      description: 'QR-AutoSync is an automated event management system designed to streamline attendance tracking and participant communication. It features a QR code scanner that logs participant details like Name, Email, Time, and Status, along with a bulk email automation tool for invitations, confirmations, and thank-you messages. Built with Python, JavaScript, HTML, and CSS, the system provides an organizer dashboard to upload participant lists, trigger email campaigns, and monitor attendance in real time. EventSync ensures a reliable, reusable, and customizable solution for efficiently managing events of any scale.',
+      techStack: ['Python','JavaScript', 'HTML', 'CSS'],
+      github: 'https://github.com/setusairam/qrauto',
+      //demo: 'https://setusairam9.github.io/EventSync/',
+      image: '/images/projects/qrproject.png',
+      category: ['Automation', 'Event Management'],
+      icon: 'mdi:qrcode-scan'
+    }
   ];
 
   const publications = [

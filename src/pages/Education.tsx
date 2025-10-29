@@ -52,30 +52,6 @@ const Education: React.FC = () => {
   ];
 
   const certifications = [
-    {
-      name: 'Wireshark Master',
-      platform: 'Udemy',
-      year: '2024',
-      logo: '/images/education/udemylogo.png',
-      skills: ['Wireshark Tool', 'Packet Tracing', 'Packet Sniffing'],
-      link: 'https://www.udemy.com/certificate/UC-0386db2a-d0a4-4d66-a4df-588b171043ee/'
-    },
-      {
-        name: 'Introduction to Cyber Security',
-        platform: 'Cisco Networking Academy',
-        year: '2023',
-        logo: '/images/education/ciscologo1.jpg',
-        skills: ['Cyber Best Practices', 'Cybersecurity', 'Network Vulnerabilities' , 'Privacy And Data Confidentiality', 'Threat Detection'],
-        link: 'https://www.credly.com/badges/5cfbb274-9114-4fc6-aed1-fed62302a439'
-      },
-      {
-        name: 'Ignite India - Enterprenurship Development Program',
-        platform: 'Wadhwani Foundation',
-        year: '2025',
-        logo: '/images/education/Wadhwanilogo.png',
-        skills: ['Entrepreneurial Skills', 'Innovation', 'Idea Development', 'Business Planning', 'Leadership'],
-        link: 'https://web.certificate.wfglobal.org/en/certificate?certificateId=68ff09d8340b394e18efd33f'
-      },
       {
       name: 'Tools of the Trade: Linux and SQL',
       platform: 'Google - Coursera',
@@ -92,7 +68,32 @@ const Education: React.FC = () => {
         'Authentications'
       ],
       link: 'https://coursera.org/share/7b4313c2c101981c54f9b92676f2b4d6'
-    }
+    },
+    {
+        name: 'Ignite India - Enterprenurship Development Program',
+        platform: 'Wadhwani Foundation',
+        year: '2025',
+        logo: '/images/education/Wadhwanilogo.png',
+        skills: ['Entrepreneurial Skills', 'Innovation', 'Idea Development', 'Business Planning', 'Leadership'],
+        link: 'https://web.certificate.wfglobal.org/en/certificate?certificateId=68ff09d8340b394e18efd33f'
+      },
+      {
+      name: 'Wireshark Master',
+      platform: 'Udemy',
+      year: '2024',
+      logo: '/images/education/udemylogo.png',
+      skills: ['Wireshark Tool', 'Packet Tracing', 'Packet Sniffing'],
+      link: 'https://www.udemy.com/certificate/UC-0386db2a-d0a4-4d66-a4df-588b171043ee/'
+    },
+      {
+        name: 'Introduction to Cyber Security',
+        platform: 'Cisco Networking Academy',
+        year: '2023',
+        logo: '/images/education/ciscologo1.jpg',
+        skills: ['Cyber Best Practices', 'Cybersecurity', 'Network Vulnerabilities' , 'Privacy And Data Confidentiality', 'Threat Detection'],
+        link: 'https://www.credly.com/badges/5cfbb274-9114-4fc6-aed1-fed62302a439'
+      }
+
   ];
 
   const achievements = [
