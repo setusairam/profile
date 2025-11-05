@@ -17,7 +17,7 @@ const Projects = () => {
       description: 'This project focuses on implementing an Access Control Mechanism to enhance website security. After logging in, users must complete multi-factor authentication by entering an OTP sent to their mobile. Once logged in, the dashboard displays only specific sections, while others remain locked for added security. Users can unlock these private sections by entering a 4- or 6-digit PIN. To ensure safety, sessions automatically log out after 1 minute of inactivity, and unlocked sections require the PIN again if accessed in a new session, maintaining tight control over sensitive information.',
       techStack: ['Python', 'Flask', 'SQLite', 'JavaScript', 'HTML', 'CSS'],
       github: 'https://github.com',
-      image: '/images/projects/accesscontrols1.png',
+      image: '/images/projects/accesscontrolspro.png',
       category: ['Full Stack', 'Security'],
       icon: 'mdi:security-lock'
     },
