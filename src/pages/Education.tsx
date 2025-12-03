@@ -78,6 +78,14 @@ const Education: React.FC = () => {
         link: 'https://web.certificate.wfglobal.org/en/certificate?certificateId=68ff09d8340b394e18efd33f'
       },
       {
+        "name": "Winter School on Data Structures and Algorithms for Strings, with Applications to Search Engines",
+        "platform": "ACM India",
+        "year": "2024",
+        "logo": "/images/education/ACMIndiaLogo.jpg",
+        "skills": ["Data Structures", "Algorithms", "String Processing", "Search Engine Technologies", "Computational Thinking"],
+        "link": "#"
+      },
+      {
       name: 'Wireshark Master',
       platform: 'Udemy',
       year: '2024',
