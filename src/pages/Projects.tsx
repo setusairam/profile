@@ -22,7 +22,7 @@ const Projects = () => {
       icon: 'mdi:security-lock'
     },
     {
-      title: 'Magnifier (AccessiView)',
+      title: 'Vision Aid (Magnifier)',
       summary: 'Web application for visually impaired students with OCR, voice modulation, and live broadcast features.',
       description: 'The Magnifier project aims to develop a web application tailored for visually impaired students, providing accessibility features that enhance their learning experience. Key features include:\n1. Filters: Customizable display filters for clarity.\n2. OCR: Converts text to voice for ease.\n3. Voice Modulation: Adjustable speech settings.\n4. Zoom Options: Customizable text sizes.\n5. Live Broadcast: Sharing a specific screen so others can see it in real-time. Each viewer can customize how they view it (like zooming in or changing colors), but their changes won\'t affect what others see or what the person sharing the screen is doing.',
       techStack: ['JavaScript', 'Python', 'OpenCV', 'ngrok', 'HTML', 'CSS'],
@@ -52,6 +52,16 @@ const Projects = () => {
       icon: 'mdi:clipboard-check'
     },
     {
+      title: 'Blockchain-Based Document Verification System',
+      summary: 'A secure and tamper-proof credential verification platform using Ethereum, IPFS, and SHA-256 hashing.',
+      description: 'A blockchain-powered document verification system that ensures authenticity, immutability, and efficient retrieval of academic and professional credentials. The platform generates SHA-256 hashes, stores documents on IPFS, records metadata on Ethereum smart contracts, and enables instant verification without exposing actual document content. Designed for scalability, decentralization, and privacy preservation.',
+      techStack: ["Ethereum", "Solidity", "IPFS", "SHA-256", "Web3.js", "Bootstrap"],
+      github: 'https://github.com/setusairam/Blockchain-Based-Document-Verification-System',
+      image: '/images/projects/blockchain-doc-verification.png',
+      category: ["Blockchain", "Security", "Web App"],
+      icon: 'mdi:shield-check'
+    },
+    {
       title: 'Steganography Tool',
       summary: 'Python application for concealing and retrieving hidden information within images securely.',
       description: 'This steganography project presents a Python-based application that conceals and retrieves hidden information within images. It functions as a command-line and GUI tool, allowing users to embed confidential text or files into carrier images without visibly affecting their appearance. Using libraries like Pillow for image processing and Tkinter for the graphical interface, the tool enables users to select images, hide custom messages, and later extract them. This project demonstrates practical implementation of steganographic techniques, offering a simple yet effective solution for secure and discreet data hiding within image files.',
@@ -71,17 +81,17 @@ const Projects = () => {
       image: '/images/projects/visionflex.png',
       category: ['Frontend', 'Accessibility'],
       icon: 'mdi:eye'
-    },
-    {
-      title: 'QR-AutoSync',
-      summary: 'Automated event management system with QR code attendance tracking and bulk email automation.',
-      description: 'QR-AutoSync is an automated event management system designed to streamline attendance tracking and participant communication. It features a QR code scanner that logs participant details like Name, Email, Time, and Status, along with a bulk email automation tool for invitations, confirmations, and thank-you messages. Built with Python, JavaScript, HTML, and CSS, the system provides an organizer dashboard to upload participant lists, trigger email campaigns, and monitor attendance in real time. EventSync ensures a reliable, reusable, and customizable solution for efficiently managing events of any scale.',
-      techStack: ['Python', 'JavaScript', 'HTML', 'CSS'],
-      github: 'https://github.com/setusairam/qrauto',
-      image: '/images/projects/qrproject.png',
-      category: ['Automation', 'Event Management'],
-      icon: 'mdi:qrcode-scan'
     }
+    // {
+    //   title: 'QR-AutoSync',
+    //   summary: 'Automated event management system with QR code attendance tracking and bulk email automation.',
+    //   description: 'QR-AutoSync is an automated event management system designed to streamline attendance tracking and participant communication. It features a QR code scanner that logs participant details like Name, Email, Time, and Status, along with a bulk email automation tool for invitations, confirmations, and thank-you messages. Built with Python, JavaScript, HTML, and CSS, the system provides an organizer dashboard to upload participant lists, trigger email campaigns, and monitor attendance in real time. EventSync ensures a reliable, reusable, and customizable solution for efficiently managing events of any scale.',
+    //   techStack: ['Python', 'JavaScript', 'HTML', 'CSS'],
+    //   github: 'https://github.com/setusairam/qrauto',
+    //   image: '/images/projects/qrproject.png',
+    //   category: ['Automation', 'Event Management'],
+    //   icon: 'mdi:qrcode-scan'
+    // }
   ];
 
   const publications = [
