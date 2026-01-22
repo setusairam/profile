@@ -103,6 +103,20 @@ const Projects = () => {
       link: 'https://ieeexplore.ieee.org/abstract/document/10941623'
     },
     {
+      title: 'FileLedger: Blockchain-Based System for File Authenticity and Tamper Detection',
+      platform: '2025 International Conference on Future Technologies (ICFT)',
+      date: '2026',
+      description: 'This research addresses document tampering and fake credentialing with a blockchain verification system employing Ethereum, IPFS, and SHA-256 hashing, making documents secure, tamper-proof, and instantly verifiable involves using UUIDs and Web3 libraries. It aims to eliminate points of failures using decentralization, this verification mechanism builds a clear, scalable, and fraud-proof digital ecosystem for academic as well as professional verification.',
+      link: 'https://ieeexplore.ieee.org/document/11336558'
+    },
+    {
+      title: 'Legacy Sync Asset Distribution Framework',
+      platform: '2025 International Conference on Future Technologies (ICFT)',
+      date: '2026',
+      description: 'Current NFT marketplaces do not handle what happens to digital assets when a user becomes inactive or passes away, which can lead to lost NFTs and inheritance disputes. This research proposes a new NFT marketplace design that automatically manages digital asset inheritance using blockchain technology and smart contracts. The system detects long-term user inactivity and securely redistributes assets through four options: donating to charity, selling assets and giving the money to family, transferring NFTs directly to heirs, or transferring them to a legal representative. Tests on the Ethereum network showed very high accuracy and reliability. Overall, the solution ensures NFTs are not lost, supports legal and transparent inheritance, and can be easily integrated into existing Web3 platforms for long-term digital asset management.',
+      link: 'https://ieeexplore.ieee.org/document/11336400'
+    },
+    {
       title: 'Predicting diabetes using machine learning for health care',
       platform: 'Not Published',
       date: '20XX',
