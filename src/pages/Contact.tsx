@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, Trophy, Code2, Download, Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram, Globe, ExternalLink, BookOpen, FileText, Award, Code, Sparkles, GraduationCap, PenTool } from 'lucide-react';
+import { Terminal,TrendingUp, Mic, Trophy, Code2, Download, Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram, Globe, ExternalLink, BookOpen, FileText, Award, Code, Sparkles, GraduationCap, PenTool, Calendar } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const socialLinks = [
@@ -104,8 +104,11 @@ const Contact: React.FC = () => {
   const stats = [
     { label: 'Technical Blogs', value: '15+', icon: FileText },
     { label: 'Research Papers', value: '3', icon: GraduationCap },
-    { label: 'GitHub Repositories', value: '50+', icon: Github },
+    // { label: 'GitHub Repositories', value: '50+', icon: Github },
+    { label: 'Technical Events Conducted', value: '25+', icon: Calendar },
     { label: 'Major Projects', value: '5+', icon: Sparkles },
+    { label: 'Public Speaking Sessions', value: '2', icon: Mic },
+    { label: 'Failures Turned Lessons', value: '∞', icon: TrendingUp },
   ];
 
   const interests = [
