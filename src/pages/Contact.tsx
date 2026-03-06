@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
 
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'setusairam5@gmail.com', href: 'mailto:setusairam5@gmail.com' },
-    { icon: Phone, label: 'Phone', value: '+91 7XXXX XXX25', href: 'tel:+917XXXXXXX25' },
+    { icon: Phone, label: 'Phone', value: '+91 7XXXX XXX25', href: 'tel:+917674043125' },
     { icon: MapPin, label: 'Location', value: 'India', href: null },
   ];
 

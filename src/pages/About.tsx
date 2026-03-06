@@ -102,7 +102,6 @@ const About: React.FC = () => {
     { name: 'Canva', icon: 'simple-icons:canva' },
     { name: 'MongoDB', icon: 'devicon:mongodb' },
     { name: 'Jupyter', icon: 'devicon:jupyter' },
-    { name: 'Word Press', icon: 'ion:logo-wordpress' },
       ],
       capabilities: [
         'Responsive and mobile-first UI design',
