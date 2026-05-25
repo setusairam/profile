@@ -8,144 +8,136 @@ interface ProjectDetailModalProps {
   onClose: () => void;
   project: {
     title: string;
+    summary: string;
     description: string;
     techStack: string[];
-    github?: string;
-    demo?: string;
+    github: string;
     image: string;
     category: string[];
-    icon: string;
+    demo?: string;
   } | null;
 }
 
-const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
-  isOpen,
-  onClose,
-  project,
-}) => {
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen]);
-
+const ProjectDetailModal = ({ isOpen, onClose, project }: ProjectDetailModalProps) => {
   if (!project) return null;
 
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black/50 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4"
+          onClick={onClose}
+        >
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
-          />
-
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              transition={{ duration: 0.3 }}
-              className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden my-8"
-            >
+            initial={{ y: '100%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: '100%', opacity: 0 }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            className="bg-white dark:bg-gray-900 w-full sm:w-full sm:max-w-2xl sm:rounded-2xl rounded-t-2xl shadow-2xl max-h-[90vh] sm:max-h-[85vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 p-4 sm:p-6 flex justify-between items-center z-10">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white pr-8">
+                Project Details
+              </h2>
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 bg-white/90 dark:bg-black/90 p-2 rounded-full hover:bg-white dark:hover:bg-black transition-colors z-10"
-                aria-label="Close modal"
+                className="absolute right-4 top-4 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
               >
-                <X className="w-6 h-6 text-gray-900 dark:text-white" />
+                <X size={24} className="text-gray-600 dark:text-gray-400" />
               </button>
+            </div>
 
-              <div className="p-8 overflow-y-auto max-h-[calc(90vh-2rem)]">
-                <div className="flex gap-6 mb-6">
-                  <div className="flex-shrink-0">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-40 h-40 object-cover rounded-lg shadow-md"
-                    />
+            <div className="p-4 sm:p-6">
+              <div className="flex flex-col gap-6">
+                <div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 sm:h-80 object-cover rounded-xl"
+                  />
+                </div>
+
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+                      {project.title}
+                    </h3>
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center space-x-3 mb-3">
-                      <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-lg">
-                        <Icon icon={project.icon} className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                      </div>
-                    </div>
-                    <div className="flex flex-wrap gap-2 mb-3">
+
+                  <div>
+                    <div className="flex flex-wrap gap-2">
                       {project.category.map((cat) => (
                         <span
                           key={cat}
-                          className="bg-blue-600 dark:bg-blue-400 text-white dark:text-black px-3 py-1 rounded-full text-sm font-medium"
+                          className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-semibold rounded-full"
                         >
                           {cat}
                         </span>
                       ))}
                     </div>
-
-                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                      {project.title}
-                    </h2>
                   </div>
-                </div>
 
-                <div className="prose prose-sm dark:prose-invert max-w-none mb-6">
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-                    {project.description}
-                  </p>
-                </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      Overview
+                    </h4>
+                    <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed whitespace-pre-wrap">
+                      {project.description}
+                    </p>
+                  </div>
 
-                <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                    Technologies Used
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {project.techStack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 transition-colors"
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                      Technology Stack
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-sm font-medium rounded-lg"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-gray-200 dark:border-gray-800">
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                      Links
+                    </h4>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 bg-gray-900 dark:bg-gray-700 hover:bg-gray-800 dark:hover:bg-gray-600 text-white py-3 px-4 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors"
                       >
-                        {tech}
-                      </span>
-                    ))}
+                        <Github size={20} />
+                        <span>GitHub</span>
+                      </a>
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 bg-blue-600 dark:bg-blue-500 hover:bg-blue-700 dark:hover:bg-blue-600 text-white py-3 px-4 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors"
+                        >
+                          <ExternalLink size={20} />
+                          <span>Live Demo</span>
+                        </a>
+                      )}
+                    </div>
                   </div>
-                </div>
-
-                <div className="flex flex-wrap gap-4 pt-6 border-t border-gray-200 dark:border-gray-800">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors font-medium"
-                    >
-                      <Github size={20} />
-                      <span>View Code</span>
-                    </a>
-                  )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-6 py-3 bg-blue-600 dark:bg-blue-400 text-white dark:text-black rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors font-medium"
-                    >
-                      <ExternalLink size={20} />
-                      <span>Live Demo</span>
-                    </a>
-                  )}
                 </div>
               </div>
-            </motion.div>
-          </div>
-        </>
+            </div>
+          </motion.div>
+        </motion.div>
       )}
     </AnimatePresence>
   );

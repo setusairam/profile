@@ -61,7 +61,7 @@ const Experience: React.FC = () => {
     {
       title: 'President',
       organization: 'ACM Student Chapter KARE',
-      period: '2025 - Present',
+      period: 'Mar 2025 - Apr 2026',
       description: 'Led technical workshops and hackathons, organized coding competitions, and mentored fellow students in programming concepts.',
       logo: '/images/companies/kareacmlogo.jpg',
       website: 'https://kare.acm.org',
@@ -75,7 +75,7 @@ const Experience: React.FC = () => {
     {
       title: 'Lead',
       organization: 'Placement and Career Tutelage KARE',
-      period: '2025 - Present',
+      period: 'Jan 2025 - Apr 2026',
       description: 'Managed development projects, coordinated team activities, and facilitated knowledge sharing sessions on emerging technologies.',
       logo: '/images/companies/pactkarelogo.png',
       website: 'https://pact4u.vercel.app/',
@@ -89,7 +89,7 @@ const Experience: React.FC = () => {
     {
       title: 'Design Head',
       organization: 'Vishaka Cultural Club',
-      period: '2025 - Present',
+      period: 'Mar 2025 - Apr 2026',
       description: 'Contributing to various open-source projects, maintaining documentation, and helping newcomers get started with open source.',
       logo: '/images/companies/vishakaclublogo.jpg',
       website: 'https://github.com',
@@ -103,7 +103,7 @@ const Experience: React.FC = () => {
     {
       title: 'Blogger and Graphic Designer',
       organization: 'ACM Student Chapter KARE',
-      period: '2023 - 2025',
+      period: 'Dec 2023 - Mar 2025',
       description: 'Contributing to various open-source projects, maintaining documentation, and helping newcomers get started with open source.',
       logo: '/images/companies/kareacmlogo.jpg',
       website: 'https://kare.acm.org',
@@ -116,7 +116,7 @@ const Experience: React.FC = () => {
     {
   title: 'Technical Lead',
   organization: 'ScoreCraft',
-  period: '2024 - 2025',
+  period: 'Sep 2024 - May 2025',
   description: 'Led the technical operations of the club, ensuring smooth execution of quizzes, competitions, and hackathons with a focus on security and efficiency.',
   logo: '/images/companies/scorecraftlogo.jpg',
   website: 'https://scorecraft.org',

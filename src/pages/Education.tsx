@@ -10,8 +10,8 @@ const Education: React.FC = () => {
       degree: 'Bachelor of Technology in Computer Science',
       institution: 'Kalasalingam Academy of Research and Education',
       location: 'Srivilliputtur, India',
-      period: '2022 - Present',
-      cgpa: '8.7/10.0',
+      period: 'Sep 2022 – May 2026',
+      cgpa: '8.82/10.0',
       description: 'Specialized in Cyber Security. This Journey was a transformative journey filled with innovation, leadership, and community-building. I balanced academics with real-world projects and active participation in student chapters.',
       coursework: [
         'Data Security',
@@ -32,7 +32,7 @@ const Education: React.FC = () => {
       degree: 'Intermediate Education',
       institution: 'Viswasai Jr College',
       location: 'Nellore, India',
-      period: '2020 - 2022',
+      period: 'Jun 2020 - Aug 2022',
       percentage: '86%',
       description: 'Completed 11th and 12th grade with a strong focus on Mathematics, Physics, and Chemistry, laying a solid foundation in core technical subjects. Strengthened analytical and problem-solving abilities while building proficiency in English, leadership, and scientific reasoning.',
       coursework: [
