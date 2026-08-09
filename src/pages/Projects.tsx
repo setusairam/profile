@@ -42,6 +42,26 @@ const Projects = () => {
       icon: 'solar:health-bold'
     },
     {
+      title: 'Hackathon Management System',
+      summary: 'Full-stack hackathon management platform for participant registration, team management, payments, project submissions, attendance, mentoring, judging, and leaderboards.',
+      description: 'A production-ready hackathon management platform designed to manage the complete lifecycle of a hackathon from participant registration to final judging and certificates. The system supports Google and email authentication, participant registration, configurable team management, team verification, payment submission, problem statement selection, project submissions, mentor assignment, QR and manual attendance, announcements, certificates, judge assignments, evaluation rubrics, automated scoring, leaderboards, reports, and role-based administration. Administrators can manage teams, participants, payments, problem statements, submissions, judges, mentors, attendance, certificates, and system settings through a centralized dashboard. The application is built as a React.js and Vite SPA with Firebase Authentication, Firestore, Storage, and Cloud Functions, with secure access control and configurable event settings.',
+      techStack: ['React.js', 'Vite', 'JavaScript', 'JSX', 'React Router', 'Tailwind CSS', 'Firebase Authentication', 'Firestore', 'Firebase Storage', 'Cloud Functions', 'React Hook Form', 'Zod', 'TanStack Table', 'Recharts', 'Framer Motion', 'QR Code', 'Firebase Security Rules'],
+      github: 'YOUR_GITHUB_REPOSITORY_URL',
+      image: '/images/projects/hackathon.png',
+      category: ['React.js', 'Firebase', 'Hackathon Management', 'SaaS'],
+      icon: 'solar:code-square-bold'
+    },
+    {
+      title: 'University Cultural Festival Management System',
+      summary: 'Full-stack university event management platform for cultural festivals, student activities, competitions, digital ticketing, QR attendance, and event administration.',
+      description: 'A production-ready university cultural festival and student event management platform built for universities, student unions, cultural clubs, and event organizers across Europe. The system supports event discovery, participant registration, digital QR ticket generation, event activities, workshops, performances, competitions, judge assignments, scoring, leaderboards, certificates, announcements, attendance tracking, reports, and role-based administration. Participants can register for events, manage their profiles, view tickets, join activities, and check their attendance, while administrators can manage events, participants, tickets, competitions, judges, staff, attendance, certificates, reports, and permissions. The platform uses Firebase Authentication, Firestore, Storage, Cloud Functions, App Check, and Security Rules to provide a secure full-stack architecture with role-based access control and GDPR-oriented privacy features.',
+      techStack: ['React.js', 'Vite', 'JavaScript', 'JSX', 'React Router', 'Tailwind CSS', 'Firebase Authentication', 'Firestore', 'Firebase Storage', 'Cloud Functions', 'Firebase App Check', 'React Hook Form', 'Zod', 'TanStack Query', 'TanStack Table', 'Recharts', 'Framer Motion', 'QR Code', 'QR Scanner'],
+      github: '',
+      image: '/images/projects/unifest.png',
+      category: ['React.js', 'Firebase', 'Event Management', 'SaaS'],
+      icon: 'solar:calendar-bold'
+    },
+    {
       title: 'Travel Planner (TravelX)',
       summary: 'Responsive web app for trip planning with smart destination suggestions and curated tourist spots.',
       description: 'A responsive Travel Planner web application that allows users to input trip details and receive smart travel suggestions. The app includes a curated list of popular tourist destinations and famous spots that are readily accessible under a free plan, providing a seamless and user-friendly experience for organizing trips efficiently.',
