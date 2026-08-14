@@ -63,10 +63,10 @@ const Contact: React.FC = () => {
       color: 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700'
     },
     {
-      name: 'Personal Blog',
+      name: 'Technical Blog',
       icon: BookOpen,
-      description: 'In-depth technical tutorials and project breakdowns.',
-      url: 'https://bitsizedtech.blogspot.com/',
+      description: 'In-depth technical tutorials and breakdowns.',
+      url: 'https://thedataandmath.blogspot.com/',
       color: 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800'
     },
     {
