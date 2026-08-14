@@ -125,9 +125,7 @@ const About: React.FC = () => {
 
   const professionalTitles = [
     'Data Analyst',
-    'Python Developer', 
-    'Frontend Developer',
-    'Designer'
+    'Python Developer'
   ];
 
   return (
