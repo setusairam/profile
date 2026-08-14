@@ -56,10 +56,10 @@ const Contact: React.FC = () => {
 
   const blogs = [
     {
-      name: 'Medium',
+      name: 'Substack',
       icon: PenTool,
-      description: 'Writing about AI, LLMs, Web Development, and emerging technologies.',
-      url: 'https://medium.com/@setusairam5',
+      description: 'A space for honest reflections on life, ambition, growth, and the moments that make it worth living.',
+      url: 'https://setusairam.substack.com/',
       color: 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700'
     },
     {
@@ -240,7 +240,7 @@ const Contact: React.FC = () => {
           <div className="mb-10">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4 flex items-center gap-2">
               <PenTool className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-              Technical Writing
+              Writing
             </h3>
             <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4">
               {blogs.map((blog) => (
