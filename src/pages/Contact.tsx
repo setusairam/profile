@@ -187,7 +187,7 @@ const Contact: React.FC = () => {
   const stats = [
     { label: 'Technical Blogs', value: '15+', icon: FileText },
     { label: 'Research Papers', value: '3', icon: GraduationCap },
-    { label: 'Technical Events Conducted', value: '25+', icon: Calendar },
+    { label: 'Technical Events Conducted', value: '40+', icon: Calendar },
     { label: 'Major Projects', value: '5+', icon: Sparkles },
     { label: 'Public Speaking Sessions', value: '2', icon: Mic },
     { label: 'Failures Turned Lessons', value: '∞', icon: TrendingUp },

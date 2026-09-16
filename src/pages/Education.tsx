@@ -51,6 +51,14 @@ const Education: React.FC = () => {
 
   const certifications = [
     {
+      name: 'Software Development Lifecycle (SDLC)',
+      platform: 'Udemy',
+      year: '2026',
+      logo: '/images/education/udemylogo.png',
+      skills: ['SDLC', 'Agile Methodologies', 'SCRUM', 'XP'],
+      link: 'https://www.udemy.com/certificate/UC-f1067cba-5631-4047-8066-874068a416bc/'
+    },
+    {
       name: 'Tools of the Trade: Linux and SQL',
       platform: 'Google - Coursera',
       year: '2025',
