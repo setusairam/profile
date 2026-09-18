@@ -92,6 +92,14 @@ const Education: React.FC = () => {
       link: "#"
     },
     {
+      name: 'Business writing & Communication',
+      platform: 'Linkedin Learning',
+      year: '2026',
+      logo: '/images/education/linkedinfull.jpg',
+      skills: ['Communication', 'Business Writing', 'Professional Writing', 'Professional Communication'],
+      link: '#'
+    },
+    {
       name: 'Wireshark Master',
       platform: 'Udemy',
       year: '2024',
