@@ -71,13 +71,13 @@ const Contact: React.FC = () => {
       icon: Phone,
       label: 'Phone',
       value: '+91 7XXXX XXX25',
-      href: 'tel:+917674043125',
+      href: 'mailto:setusairam5@gmail.com',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'India',
-      href: null,
+      value: 'Bengaluru, Karnataka, India',
+      href: 'https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9882597,77.4571531,11z/data=!3m1!4b1!4m6!3m5!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9628957!4d77.57754!16zL20vMDljMTc?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D',
     },
   ];
 
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
       name: 'Technical Blog',
       icon: BookOpen,
       description: 'In-depth technical tutorials and breakdowns.',
-      url: 'https://thedataandmath.blogspot.com/',
+      url: 'https://thedataandtech.blogspot.com/',
       color:
         'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800',
     },
@@ -185,11 +185,11 @@ const Contact: React.FC = () => {
   // STATS
   // ============================================================
   const stats = [
-    { label: 'Technical Blogs', value: '15+', icon: FileText },
-    { label: 'Research Papers', value: '3', icon: GraduationCap },
+    { label: 'Technical Blogs', value: '5+', icon: FileText },
+    { label: 'Research Publications', value: '3', icon: GraduationCap },
     { label: 'Technical Events Conducted', value: '40+', icon: Calendar },
-    { label: 'Major Projects', value: '5+', icon: Sparkles },
-    { label: 'Public Speaking Sessions', value: '2', icon: Mic },
+    { label: 'Major Projects', value: '7+', icon: Sparkles },
+    { label: 'Public Speaking Sessions', value: '5', icon: Mic },
     { label: 'Failures Turned Lessons', value: '∞', icon: TrendingUp },
   ];
 

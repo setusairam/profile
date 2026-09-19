@@ -1,5 +1,13 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { Lightbulb, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  ShieldCheck,
+  Blocks,
+  FileKey2,
+  Brain,
+  ExternalLink,
+  ChevronDown,
+  ChevronUp,
+} from 'lucide-react';
 import { useState } from 'react';
 
 interface PublicationCardProps {
@@ -8,6 +16,7 @@ interface PublicationCardProps {
   date: string;
   description: string;
   link?: string;
+  icon?: 'security' | 'blockchain' | 'inheritance' | 'health';
 }
 
 const PublicationCard: React.FC<PublicationCardProps> = ({
@@ -16,10 +25,21 @@ const PublicationCard: React.FC<PublicationCardProps> = ({
   date,
   description,
   link,
+  icon = 'security',
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const summary = description.split('.')[0] + '.';
+
+  // Select icon based on publication type
+  const publicationIcons = {
+    security: ShieldCheck,
+    blockchain: Blocks,
+    inheritance: FileKey2,
+    health: Brain,
+  };
+
+  const Icon = publicationIcons[icon];
 
   return (
     <motion.div
@@ -33,8 +53,9 @@ const PublicationCard: React.FC<PublicationCardProps> = ({
             whileHover={{ rotate: 360 }}
             transition={{ duration: 0.5 }}
           >
-            <Lightbulb className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
           </motion.div>
+
           <span className="text-sm text-gray-500 dark:text-gray-400">
             {platform} • {date}
           </span>
@@ -74,7 +95,12 @@ const PublicationCard: React.FC<PublicationCardProps> = ({
             className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium"
           >
             <span>{isExpanded ? 'Show Less' : 'Read More'}</span>
-            {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+
+            {isExpanded ? (
+              <ChevronUp size={16} />
+            ) : (
+              <ChevronDown size={16} />
+            )}
           </button>
 
           {link && (
