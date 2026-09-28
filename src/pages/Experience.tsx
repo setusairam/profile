@@ -258,7 +258,7 @@ const Experience: React.FC = () => {
                 }`}
               >
                 {getTabIcon('leadership')}
-                <span>Leadership</span>
+                <span>Volunteering</span>
               </button>
             </div>
           </div>

@@ -76,6 +76,14 @@ const Education: React.FC = () => {
       link: 'https://coursera.org/share/7b4313c2c101981c54f9b92676f2b4d6'
     },
     {
+      name: 'Bootstrap 5',
+      platform: 'Udemy',
+      year: '2026',
+      logo: '/images/education/udemylogo.png',
+      skills: [ 'Custom Bootstrap', 'Utilities', 'Components', 'Layout', 'Widgets'],
+      link: ' https://www.udemy.com/certificate/UC-40f03668-599f-43f5-9c89-2061f78b4f3c'
+    },
+    {
       name: 'Ignite India - Enterprenurship Development Program',
       platform: 'Wadhwani Foundation',
       year: '2025',
